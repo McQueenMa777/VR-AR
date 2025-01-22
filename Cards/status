@@ -1,0 +1,18 @@
+{
+    "status": "SUCCESS",
+    "execMode": "LOCAL",
+    "nodeName": "Texturing_1",
+    "nodeType": "Texturing",
+    "packageName": "aliceVision",
+    "packageVersion": null,
+    "graph": "",
+    "commandLine": "aliceVision_texturing  --input \"C:/Users/Jasper/AppData/Local/Temp/MeshroomCache/Meshing/f263c03164997f84f22589575d78e3d18b11dfcd/densePointCloud.abc\" --imagesFolder \"C:/Users/Jasper/AppData/Local/Temp/MeshroomCache/PrepareDenseScene/f6c98a167a47905e307650ab0914aff2b7145ee9\" --inputMesh \"C:/Users/Jasper/AppData/Local/Temp/MeshroomCache/MeshFiltering/a8e9aa4a826251db43b458f551195e458f3ab93e/mesh.obj\" --inputRefMesh \"\" --textureSide 8192 --downscale 2 --outputMeshFileType obj --colorMappingFileType exr --unwrapMethod Basic --useUDIM True --fillHoles False --padding 5 --multiBandDownscale 4 --multiBandNbContrib 1 5 10 0 --useScore True --bestScoreThreshold 0.1 --angleHardThreshold 90.0 --workingColorSpace sRGB --outputColorSpace AUTO --correctEV True --forceVisibleByAllVertices False --flipNormals False --visibilityRemappingMethod PullPush --subdivisionTargetRatio 0.8 --verboseLevel info --output \"C:/Users/Jasper/AppData/Local/Temp/MeshroomCache/Texturing/eacd836ea55a39b42e5fe309dc32cdbe6a472e70\"",
+    "env": null,
+    "startDateTime": "2025-01-22 19:33:52.062112",
+    "endDateTime": "2025-01-22 19:35:59.937622",
+    "elapsedTime": 127.87673711776733,
+    "hostname": "DESKTOP-179OE5M",
+    "sessionUid": "4ab2ea90-d8f2-11ef-9b99-84a938bd7d0a",
+    "returnCode": 0,
+    "elapsedTimeStr": "0:02:07.876737"
+}
