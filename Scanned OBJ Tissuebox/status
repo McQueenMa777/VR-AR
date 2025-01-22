@@ -1,0 +1,18 @@
+{
+    "status": "SUCCESS",
+    "execMode": "LOCAL",
+    "nodeName": "Texturing_1",
+    "nodeType": "Texturing",
+    "packageName": "aliceVision",
+    "packageVersion": null,
+    "graph": "",
+    "commandLine": "aliceVision_texturing  --input \"C:/Users/fisha/AppData/Local/Temp/MeshroomCache/Meshing/f36d0f6c6bcbb1de048b57078c3f46e0a60d6d40/densePointCloud.abc\" --imagesFolder \"C:/Users/fisha/AppData/Local/Temp/MeshroomCache/PrepareDenseScene/629b042d3b31082915be3fa08621cb5c76e8c5ae\" --inputMesh \"C:/Users/fisha/AppData/Local/Temp/MeshroomCache/MeshFiltering/e542c360b3a2b72c215d5bdae7c6da10a8bfb886/mesh.obj\" --inputRefMesh \"\" --textureSide 8192 --downscale 2 --outputMeshFileType obj --colorMappingFileType exr --unwrapMethod Basic --useUDIM True --fillHoles False --padding 5 --multiBandDownscale 4 --multiBandNbContrib 1 5 10 0 --useScore True --bestScoreThreshold 0.1 --angleHardThreshold 90.0 --workingColorSpace sRGB --outputColorSpace AUTO --correctEV True --forceVisibleByAllVertices False --flipNormals False --visibilityRemappingMethod PullPush --subdivisionTargetRatio 0.8 --verboseLevel info --output \"C:/Users/fisha/AppData/Local/Temp/MeshroomCache/Texturing/721f66642ef678c7e83fb02efc51eb1ca101aba3\"",
+    "env": null,
+    "startDateTime": "2025-01-22 10:51:12.918307",
+    "endDateTime": "2025-01-22 10:58:22.403711",
+    "elapsedTime": 429.4841811656952,
+    "hostname": "McQueenMa\u7684\u5e7b16",
+    "sessionUid": "b32903c0-d8ac-11ef-8c25-c88a9ad526a8",
+    "returnCode": 0,
+    "elapsedTimeStr": "0:07:09.484181"
+}

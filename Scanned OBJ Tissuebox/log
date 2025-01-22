@@ -1,0 +1,1340 @@
+[2025-01-22 10:51:13.365515] [0x0000ccd8] [trace]   Embedded OCIO configuration file: 'C:\Users\fisha\OneDrive - University College London\Desktop\Meshroom-2023.3.0-win64\Meshroom-2023.3.0\aliceVision/share/aliceVision/config.ocio' found.
+Program called with the following parameters:
+ * angleHardThreshold = 90
+ * bestScoreThreshold = 0.1
+ * bumpType =  Unknown Type "enum aliceVision::mesh::EBumpMappingType" (default)
+ * colorMappingFileType =  Unknown Type "enum aliceVision::image::EImageFileType"
+ * correctEV = 1
+ * displacementMappingFileType =  Unknown Type "enum aliceVision::image::EImageFileType" (default)
+ * downscale =  Unknown Type "unsigned int"
+ * fillHoles = 0
+ * flipNormals = 0
+ * forceVisibleByAllVertices = 0
+ * heightFileType =  Unknown Type "enum aliceVision::image::EImageFileType" (default)
+ * imagesFolder = "C:/Users/fisha/AppData/Local/Temp/MeshroomCache/PrepareDenseScene/629b042d3b31082915be3fa08621cb5c76e8c5ae"
+ * input = "C:/Users/fisha/AppData/Local/Temp/MeshroomCache/Meshing/f36d0f6c6bcbb1de048b57078c3f46e0a60d6d40/densePointCloud.abc"
+ * inputMesh = "C:/Users/fisha/AppData/Local/Temp/MeshroomCache/MeshFiltering/e542c360b3a2b72c215d5bdae7c6da10a8bfb886/mesh.obj"
+ * inputRefMesh = ""
+ * maxCoresAvailable =  Unknown Type "unsigned int" (default)
+ * maxMemoryAvailable = 18446744073709551615 (default)
+ * multiBandDownscale =  Unknown Type "unsigned int"
+ * multiBandNbContrib =  Unknown Type "class std::vector<int,class std::allocator<int> >"
+ * normalFileType =  Unknown Type "enum aliceVision::image::EImageFileType" (default)
+ * output = "C:/Users/fisha/AppData/Local/Temp/MeshroomCache/Texturing/721f66642ef678c7e83fb02efc51eb1ca101aba3"
+ * outputColorSpace =  Unknown Type "enum aliceVision::image::EImageColorSpace"
+ * outputMeshFileType =  Unknown Type "enum aliceVision::mesh::EFileType"
+ * padding =  Unknown Type "unsigned int"
+ * subdivisionTargetRatio = 0.8
+ * textureSide =  Unknown Type "unsigned int"
+ * unwrapMethod = "Basic"
+ * useScore = 1
+ * useUDIM = 1
+ * verboseLevel = "info"
+ * visibilityRemappingMethod = "PullPush"
+ * workingColorSpace =  Unknown Type "enum aliceVision::image::EImageColorSpace"
+
+Hardware : 
+	Detected core count : 20
+	OpenMP will use 20 cores
+	Detected available memory : 9464 Mo
+
+[10:51:13.368023][info] Load dense point cloud.
+[10:51:13.532587][warning] Alembic LOAD: NO OBSERVATIONS_WITH_FEATURES: , mvg_visibilityFeatId: 0, mvg_visibilityFeatPos: 0, OBSERVATIONS_WITH_FEATURES flag: false
+[10:51:14.456537][info] Found 1 image dimension(s): 
+[10:51:14.456537][info] 	- [4284x5712]
+[10:51:15.026840][info] Overall maximum dimension: [4284x5712]
+[10:51:15.026840][info] Load input mesh.
+[10:51:18.124705][info] Convert dense point cloud into ref mesh
+[10:51:18.813541][info] remapMeshVisibility based on triangles start.
+[10:51:22.442133][info] remapMeshVisibility done.
+[10:51:22.451132][info] Input mesh has no UV coordinates, start unwrapping (Basic)
+[10:51:22.453132][info] Generating UVs (textureSide: 8192; padding: 5).
+[10:51:22.453132][info] Creating texture charts.
+[10:51:27.060519][info] Packing texture charts (1990628 charts).
+[10:51:29.809831][info] Finalize packed charts (22828 charts).
+[10:51:29.862813][info] Creating texture atlases.
+[10:51:29.866816][info] 	- texture atlas 1
+[10:51:30.309004][info] Filled with 14742 charts.
+[10:51:30.312119][info] 	- texture atlas 2
+[10:51:30.317115][info] Filled with 1801 charts.
+[10:51:30.318115][info] 	- texture atlas 3
+[10:51:30.395006][info] Filled with 6285 charts.
+[10:51:30.912892][info] Unwrapping done.
+[10:51:30.912892][info] Subdivide mesh.
+[10:51:30.912892][info] nb pts init: 999411
+[10:51:30.912892][info] nb tris init: 1990628
+[10:51:30.912892][info] nb points in refMesh: 999302
+[10:51:30.912892][info] targetNbPts: 799441
+[10:51:31.071137][info] No subdivision needed.
+[10:51:31.071137][info] Number of triangle subdivisions: 0
+[10:51:31.071137][info] updateAtlases
+[10:51:31.452689][info] remapMeshVisibility based on triangles start.
+[10:51:35.180059][info] remapMeshVisibility done.
+[10:51:35.193566][info] Generate textures.
+[10:51:35.193566][info] Texturing: Use multiband blending with the following contributions per band:
+[10:51:35.193566][info]   - 1
+[10:51:35.193566][info]   - 5
+[10:51:35.193566][info]   - 10
+[10:51:35.193566][info] Texturing in srgb colorspace.
+[10:51:35.195566][info] Images loaded from cache with: exposure correction
+[10:51:35.195566][info] nbAtlas: 3
+[10:51:35.195566][info] availableRam: 7621
+[10:51:35.195566][info] availableMem: 5381
+[10:51:35.195566][info] memoryPerAtlas: 4192
+[10:51:35.195566][info] nbAtlasMax (after rounding): 1
+[10:51:35.195566][info] Total amount of available RAM: 7621 MB.
+[10:51:35.195566][info] Total amount of memory remaining for the computation: 5381 MB.
+[10:51:35.195566][info] Total amount of an image in memory: 280 MB.
+[10:51:35.195566][info] Total amount of an atlas pyramid in memory: 3072 MB.
+[10:51:35.195566][info] Processing 3 atlases by chunks of 1
+[10:51:35.195566][info] Generating texture for atlases 1 to 1
+[10:51:35.195566][info] Generating texture for atlas 1/3 (628148 triangles).
+[10:51:42.351961][info] Reading pixel color.
+[10:51:43.292237][info] - camera 43266718 (1/68) with contributions to 1 texture files:
+[10:51:43.861017][info]   exposure compensation for image 1: 1
+[10:51:44.832955][info]   - Texture file: 1
+[10:51:44.832955][info]       - band 1: 3124 triangles.
+[10:51:44.855929][info]       - band 2: 27402 triangles.
+[10:51:44.914441][info]       - band 3: 36818 triangles.
+[10:51:44.999952][info] - camera 77145610 (2/68) with contributions to 1 texture files:
+[10:51:45.561677][info]   exposure compensation for image 2: 1
+[10:51:46.497499][info]   - Texture file: 1
+[10:51:46.497499][info]       - band 1: 130106 triangles.
+[10:51:46.657437][info]       - band 2: 64921 triangles.
+[10:51:46.722953][info]       - band 3: 39286 triangles.
+[10:51:46.779953][info] - camera 90598244 (3/68) with contributions to 1 texture files:
+[10:51:47.292460][info]   exposure compensation for image 3: 1
+[10:51:48.228606][info]   - Texture file: 1
+[10:51:48.228606][info]       - band 1: 1518 triangles.
+[10:51:48.232584][info]       - band 2: 45788 triangles.
+[10:51:48.287587][info]       - band 3: 114124 triangles.
+[10:51:48.375323][info] - camera 111908369 (4/68) with contributions to 1 texture files:
+[10:51:48.859639][info]   exposure compensation for image 4: 1
+[10:51:49.753297][info]   - Texture file: 1
+[10:51:49.753297][info]       - band 1: 10373 triangles.
+[10:51:49.772296][info]       - band 2: 57069 triangles.
+[10:51:49.842811][info]       - band 3: 34522 triangles.
+[10:51:49.919317][info] - camera 146927743 (5/68) with contributions to 1 texture files:
+[10:51:50.373067][info]   exposure compensation for image 5: 1
+[10:51:51.201476][info]   - Texture file: 1
+[10:51:51.201476][info]       - band 1: 19742 triangles.
+[10:51:51.222473][info]       - band 2: 71879 triangles.
+[10:51:51.287475][info]       - band 3: 80883 triangles.
+[10:51:51.387986][info] - camera 165704781 (6/68) with contributions to 1 texture files:
+[10:51:51.830770][info]   exposure compensation for image 6: 1
+[10:51:52.689802][info]   - Texture file: 1
+[10:51:52.689802][info]       - band 1: 1176 triangles.
+[10:51:52.701307][info]       - band 2: 104587 triangles.
+[10:51:52.797788][info]       - band 3: 97764 triangles.
+[10:51:52.911662][info] - camera 184377246 (7/68) with contributions to 1 texture files:
+[10:51:53.348970][info]   exposure compensation for image 7: 1
+[10:51:54.235386][info]   - Texture file: 1
+[10:51:54.235386][info]       - band 1: 1051 triangles.
+[10:51:54.239380][info]       - band 2: 29183 triangles.
+[10:51:54.278379][info]       - band 3: 210689 triangles.
+[10:51:54.420406][info] - camera 229347473 (8/68) with contributions to 1 texture files:
+[10:51:54.887508][info]   exposure compensation for image 8: 1
+[10:51:55.775004][info]   - Texture file: 1
+[10:51:55.775004][info]       - band 1: 3288 triangles.
+[10:51:55.791000][info]       - band 2: 13060 triangles.
+[10:51:55.820508][info]       - band 3: 74240 triangles.
+[10:51:55.928018][info] - camera 234982282 (9/68) with contributions to 1 texture files:
+[10:51:56.370459][info]   exposure compensation for image 9: 1
+[10:51:57.244217][info]   - Texture file: 1
+[10:51:57.244217][info]       - band 1: 248 triangles.
+[10:51:57.245214][info]       - band 2: 9691 triangles.
+[10:51:57.273213][info]       - band 3: 91752 triangles.
+[10:51:57.371726][info] - camera 246216395 (10/68) with contributions to 1 texture files:
+[10:51:57.836128][info]   exposure compensation for image 10: 1
+[10:51:58.712778][info]   - Texture file: 1
+[10:51:58.712778][info]       - band 1: 56479 triangles.
+[10:51:58.781749][info]       - band 2: 154338 triangles.
+[10:51:58.920934][info]       - band 3: 30506 triangles.
+[10:51:59.008541][info] - camera 277561536 (11/68) with contributions to 1 texture files:
+[10:51:59.478952][info]   exposure compensation for image 11: 1
+[10:52:00.455713][info]   - Texture file: 1
+[10:52:00.455713][info]       - band 1: 5371 triangles.
+[10:52:00.466858][info]       - band 2: 51936 triangles.
+[10:52:00.607784][info]       - band 3: 36265 triangles.
+[10:52:00.674250][info] - camera 368658088 (12/68) with contributions to 1 texture files:
+[10:52:01.129298][info]   exposure compensation for image 12: 1
+[10:52:02.009788][info]   - Texture file: 1
+[10:52:02.009788][info]       - band 1: 1075 triangles.
+[10:52:02.021786][info]       - band 2: 18018 triangles.
+[10:52:02.061786][info]       - band 3: 212920 triangles.
+[10:52:02.275875][info] - camera 381518137 (13/68) with contributions to 1 texture files:
+[10:52:02.716713][info]   exposure compensation for image 13: 1
+[10:52:03.575411][info]   - Texture file: 1
+[10:52:03.575411][info]       - band 1: 7335 triangles.
+[10:52:03.597801][info]       - band 2: 49961 triangles.
+[10:52:03.665309][info]       - band 3: 43987 triangles.
+[10:52:03.751823][info] - camera 405869438 (14/68) with contributions to 1 texture files:
+[10:52:04.226140][info]   exposure compensation for image 14: 1
+[10:52:05.149284][info]   - Texture file: 1
+[10:52:05.149284][info]       - band 1: 1775 triangles.
+[10:52:05.155280][info]       - band 2: 19935 triangles.
+[10:52:05.198106][info]       - band 3: 55728 triangles.
+[10:52:05.291023][info] - camera 495512850 (15/68) with contributions to 1 texture files:
+[10:52:05.778411][info]   exposure compensation for image 15: 1
+[10:52:06.674776][info]   - Texture file: 1
+[10:52:06.674776][info]       - band 1: 605 triangles.
+[10:52:06.676669][info]       - band 2: 14572 triangles.
+[10:52:06.714599][info]       - band 3: 97569 triangles.
+[10:52:06.798675][info] - camera 526388780 (16/68) with contributions to 1 texture files:
+[10:52:07.290034][info]   exposure compensation for image 16: 1
+[10:52:08.260309][info]   - Texture file: 1
+[10:52:08.260309][info]       - band 1: 711 triangles.
+[10:52:08.263202][info]       - band 2: 15204 triangles.
+[10:52:08.282627][info]       - band 3: 146207 triangles.
+[10:52:08.383586][info] - camera 541543423 (17/68) with contributions to 1 texture files:
+[10:52:08.863102][info]   exposure compensation for image 17: 1
+[10:52:09.729348][info]   - Texture file: 1
+[10:52:09.729348][info]       - band 1: 3071 triangles.
+[10:52:09.746741][info]       - band 2: 143093 triangles.
+[10:52:09.884663][info]       - band 3: 103334 triangles.
+[10:52:10.025912][info] - camera 554787025 (18/68) with contributions to 1 texture files:
+[10:52:10.504059][info]   exposure compensation for image 18: 1
+[10:52:11.386945][info]   - Texture file: 1
+[10:52:11.386945][info]       - band 1: 65014 triangles.
+[10:52:11.453440][info]       - band 2: 60086 triangles.
+[10:52:11.525951][info]       - band 3: 37686 triangles.
+[10:52:11.583953][info] - camera 619287175 (19/68) with contributions to 1 texture files:
+[10:52:12.076474][info]   exposure compensation for image 19: 1
+[10:52:12.973449][info]   - Texture file: 1
+[10:52:12.973449][info]       - band 1: 5843 triangles.
+[10:52:13.016450][info]       - band 2: 18870 triangles.
+[10:52:13.063097][info]       - band 3: 106699 triangles.
+[10:52:13.157824][info] - camera 670737387 (20/68) with contributions to 1 texture files:
+[10:52:13.636225][info]   exposure compensation for image 20: 1
+[10:52:14.513844][info]   - Texture file: 1
+[10:52:14.513844][info]       - band 1: 923 triangles.
+[10:52:14.522361][info]       - band 2: 28812 triangles.
+[10:52:14.603672][info]       - band 3: 68583 triangles.
+[10:52:14.686424][info] - camera 700266675 (21/68) with contributions to 1 texture files:
+[10:52:15.178118][info]   exposure compensation for image 21: 1
+[10:52:16.051698][info]   - Texture file: 1
+[10:52:16.051698][info]       - band 1: 25680 triangles.
+[10:52:16.080651][info]       - band 2: 96339 triangles.
+[10:52:16.167559][info]       - band 3: 51408 triangles.
+[10:52:16.235071][info] - camera 709021393 (22/68) with contributions to 1 texture files:
+[10:52:16.722070][info]   exposure compensation for image 22: 1
+[10:52:17.651790][info]   - Texture file: 1
+[10:52:17.651790][info]       - band 1: 14105 triangles.
+[10:52:17.672796][info]       - band 2: 30529 triangles.
+[10:52:17.734308][info]       - band 3: 33888 triangles.
+[10:52:17.824957][info] - camera 742289613 (23/68) with contributions to 1 texture files:
+[10:52:18.316050][info]   exposure compensation for image 23: 1
+[10:52:19.192310][info]   - Texture file: 1
+[10:52:19.193376][info]       - band 1: 1521 triangles.
+[10:52:19.198261][info]       - band 2: 19853 triangles.
+[10:52:19.232771][info]       - band 3: 64302 triangles.
+[10:52:19.355662][info] - camera 745582541 (24/68) with contributions to 1 texture files:
+[10:52:19.828837][info]   exposure compensation for image 24: 1
+[10:52:20.736901][info]   - Texture file: 1
+[10:52:20.736901][info]       - band 1: 3942 triangles.
+[10:52:20.747849][info]       - band 2: 19724 triangles.
+[10:52:20.795849][info]       - band 3: 71518 triangles.
+[10:52:20.909818][info] - camera 853398952 (25/68) with contributions to 1 texture files:
+[10:52:21.381770][info]   exposure compensation for image 25: 1
+[10:52:22.281050][info]   - Texture file: 1
+[10:52:22.281050][info]       - band 1: 349 triangles.
+[10:52:22.282982][info]       - band 2: 7738 triangles.
+[10:52:22.329938][info]       - band 3: 75924 triangles.
+[10:52:22.414291][info] - camera 854275876 (26/68) with contributions to 1 texture files:
+[10:52:22.899821][info]   exposure compensation for image 26: 1
+[10:52:23.818042][info]   - Texture file: 1
+[10:52:23.818042][info]       - band 1: 718 triangles.
+[10:52:23.821926][info]       - band 2: 19470 triangles.
+[10:52:23.855184][info]       - band 3: 75906 triangles.
+[10:52:23.974827][info] - camera 864914385 (27/68) with contributions to 1 texture files:
+[10:52:24.472750][info]   exposure compensation for image 27: 1
+[10:52:25.474791][info]   - Texture file: 1
+[10:52:25.475793][info]       - band 1: 5790 triangles.
+[10:52:25.493789][info]       - band 2: 33088 triangles.
+[10:52:25.580987][info]       - band 3: 38721 triangles.
+[10:52:25.678500][info] - camera 880736666 (28/68) with contributions to 1 texture files:
+[10:52:26.192200][info]   exposure compensation for image 28: 1
+[10:52:27.109240][info]   - Texture file: 1
+[10:52:27.109240][info]       - band 1: 17629 triangles.
+[10:52:27.133210][info]       - band 2: 149906 triangles.
+[10:52:27.289557][info]       - band 3: 87663 triangles.
+[10:52:27.393073][info] - camera 901486833 (29/68) with contributions to 1 texture files:
+[10:52:27.908455][info]   exposure compensation for image 29: 1
+[10:52:28.831187][info]   - Texture file: 1
+[10:52:28.831187][info]       - band 1: 6287 triangles.
+[10:52:28.852640][info]       - band 2: 24252 triangles.
+[10:52:28.905639][info]       - band 3: 78369 triangles.
+[10:52:29.005200][info] - camera 902568169 (30/68) with contributions to 1 texture files:
+[10:52:29.484453][info]   exposure compensation for image 30: 1
+[10:52:30.382602][info]   - Texture file: 1
+[10:52:30.383604][info]       - band 1: 1786 triangles.
+[10:52:30.394601][info]       - band 2: 16925 triangles.
+[10:52:30.435604][info]       - band 3: 76572 triangles.
+[10:52:30.554804][info] - camera 911558037 (31/68) with contributions to 1 texture files:
+[10:52:31.060401][info]   exposure compensation for image 31: 1
+[10:52:31.982608][info]   - Texture file: 1
+[10:52:31.982608][info]       - band 1: 1641 triangles.
+[10:52:31.993562][info]       - band 2: 15324 triangles.
+[10:52:32.043320][info]       - band 3: 142461 triangles.
+[10:52:32.177836][info] - camera 1041679217 (32/68) with contributions to 1 texture files:
+[10:52:32.671736][info]   exposure compensation for image 32: 1
+[10:52:33.565357][info]   - Texture file: 1
+[10:52:33.566344][info]       - band 1: 658 triangles.
+[10:52:33.570241][info]       - band 2: 35803 triangles.
+[10:52:33.606241][info]       - band 3: 120139 triangles.
+[10:52:33.707187][info] - camera 1149281217 (33/68) with contributions to 1 texture files:
+[10:52:34.196707][info]   exposure compensation for image 33: 1
+[10:52:35.113476][info]   - Texture file: 1
+[10:52:35.113476][info]       - band 1: 2251 triangles.
+[10:52:35.127392][info]       - band 2: 62772 triangles.
+[10:52:35.216393][info]       - band 3: 181107 triangles.
+[10:52:35.382878][info] - camera 1191911393 (34/68) with contributions to 1 texture files:
+[10:52:35.881582][info]   exposure compensation for image 34: 1
+[10:52:36.801275][info]   - Texture file: 1
+[10:52:36.801275][info]       - band 1: 940 triangles.
+[10:52:36.805273][info]       - band 2: 8811 triangles.
+[10:52:36.867275][info]       - band 3: 77723 triangles.
+[10:52:36.982787][info] - camera 1196941455 (35/68) with contributions to 1 texture files:
+[10:52:37.462435][info]   exposure compensation for image 35: 1
+[10:52:38.406996][info]   - Texture file: 1
+[10:52:38.407998][info]       - band 1: 4947 triangles.
+[10:52:38.421994][info]       - band 2: 26886 triangles.
+[10:52:38.482514][info]       - band 3: 31512 triangles.
+[10:52:38.591117][info] - camera 1228672150 (36/68) with contributions to 1 texture files:
+[10:52:39.111131][info]   exposure compensation for image 36: 1
+[10:52:40.008285][info]   - Texture file: 1
+[10:52:40.008285][info]       - band 1: 4890 triangles.
+[10:52:40.018241][info]       - band 2: 22057 triangles.
+[10:52:40.067263][info]       - band 3: 53356 triangles.
+[10:52:40.151242][info] - camera 1253472578 (37/68) with contributions to 1 texture files:
+[10:52:40.634307][info]   exposure compensation for image 37: 1
+[10:52:41.534485][info]   - Texture file: 1
+[10:52:41.535463][info]       - band 1: 1883 triangles.
+[10:52:41.539466][info]       - band 2: 65505 triangles.
+[10:52:41.626977][info]       - band 3: 33735 triangles.
+[10:52:41.696614][info] - camera 1255602396 (38/68) with contributions to 1 texture files:
+[10:52:42.174069][info]   exposure compensation for image 38: 1
+[10:52:43.087179][info]   - Texture file: 1
+[10:52:43.087179][info]       - band 1: 11094 triangles.
+[10:52:43.114588][info]       - band 2: 53892 triangles.
+[10:52:43.204185][info]       - band 3: 29937 triangles.
+[10:52:43.258696][info] - camera 1258086883 (39/68) with contributions to 1 texture files:
+[10:52:43.744467][info]   exposure compensation for image 39: 1
+[10:52:44.663541][info]   - Texture file: 1
+[10:52:44.663541][info]       - band 1: 1208 triangles.
+[10:52:44.680520][info]       - band 2: 22722 triangles.
+[10:52:44.707521][info]       - band 3: 70451 triangles.
+[10:52:44.826033][info] - camera 1270388477 (40/68) with contributions to 1 texture files:
+[10:52:45.307898][info]   exposure compensation for image 40: 1
+[10:52:46.233548][info]   - Texture file: 1
+[10:52:46.233548][info]       - band 1: 2182 triangles.
+[10:52:46.243995][info]       - band 2: 51199 triangles.
+[10:52:46.321441][info]       - band 3: 233736 triangles.
+[10:52:46.505861][info] - camera 1270546899 (41/68) with contributions to 1 texture files:
+[10:52:47.007780][info]   exposure compensation for image 41: 1
+[10:52:47.906710][info]   - Texture file: 1
+[10:52:47.907711][info]       - band 1: 4071 triangles.
+[10:52:47.922709][info]       - band 2: 51425 triangles.
+[10:52:47.998201][info]       - band 3: 191253 triangles.
+[10:52:48.212167][info] - camera 1288238893 (42/68) with contributions to 1 texture files:
+[10:52:48.694997][info]   exposure compensation for image 42: 1
+[10:52:49.599296][info]   - Texture file: 1
+[10:52:49.599296][info]       - band 1: 1094 triangles.
+[10:52:49.624605][info]       - band 2: 11071 triangles.
+[10:52:49.682118][info]       - band 3: 87068 triangles.
+[10:52:49.776630][info] - camera 1308686300 (43/68) with contributions to 1 texture files:
+[10:52:50.273209][info]   exposure compensation for image 43: 1
+[10:52:51.200934][info]   - Texture file: 1
+[10:52:51.200934][info]       - band 1: 3998 triangles.
+[10:52:51.212905][info]       - band 2: 77526 triangles.
+[10:52:51.295423][info]       - band 3: 176583 triangles.
+[10:52:51.431934][info] - camera 1406233784 (44/68) with contributions to 1 texture files:
+[10:52:51.949528][info]   exposure compensation for image 44: 1
+[10:52:52.891364][info]   - Texture file: 1
+[10:52:52.891364][info]       - band 1: 5484 triangles.
+[10:52:52.908323][info]       - band 2: 84790 triangles.
+[10:52:53.000840][info]       - band 3: 218401 triangles.
+[10:52:53.151361][info] - camera 1418813230 (45/68) with contributions to 1 texture files:
+[10:52:53.633416][info]   exposure compensation for image 45: 1
+[10:52:54.553575][info]   - Texture file: 1
+[10:52:54.553575][info]       - band 1: 4852 triangles.
+[10:52:54.566969][info]       - band 2: 35252 triangles.
+[10:52:54.626969][info]       - band 3: 31986 triangles.
+[10:52:54.721480][info] - camera 1444553575 (46/68) with contributions to 1 texture files:
+[10:52:55.192530][info]   exposure compensation for image 46: 1
+[10:52:56.126795][info]   - Texture file: 1
+[10:52:56.126795][info]       - band 1: 8172 triangles.
+[10:52:56.139791][info]       - band 2: 27673 triangles.
+[10:52:56.199304][info]       - band 3: 39554 triangles.
+[10:52:56.296814][info] - camera 1477005185 (47/68) with contributions to 1 texture files:
+[10:52:56.788440][info]   exposure compensation for image 47: 1
+[10:52:57.739610][info]   - Texture file: 1
+[10:52:57.739610][info]       - band 1: 2188 triangles.
+[10:52:57.743608][info]       - band 2: 92169 triangles.
+[10:52:57.819126][info]       - band 3: 184391 triangles.
+[10:52:57.961931][info] - camera 1494725122 (48/68) with contributions to 1 texture files:
+[10:52:58.432469][info]   exposure compensation for image 48: 1
+[10:52:59.362840][info]   - Texture file: 1
+[10:52:59.363816][info]       - band 1: 1650 triangles.
+[10:52:59.368814][info]       - band 2: 16312 triangles.
+[10:52:59.399330][info]       - band 3: 83852 triangles.
+[10:52:59.536936][info] - camera 1508495499 (49/68) with contributions to 1 texture files:
+[10:53:00.023825][info]   exposure compensation for image 49: 1
+[10:53:00.950376][info]   - Texture file: 1
+[10:53:00.950376][info]       - band 1: 15583 triangles.
+[10:53:00.971279][info]       - band 2: 63198 triangles.
+[10:53:01.040791][info]       - band 3: 95685 triangles.
+[10:53:01.137309][info] - camera 1521739940 (50/68) with contributions to 1 texture files:
+[10:53:01.635579][info]   exposure compensation for image 50: 1
+[10:53:02.598471][info]   - Texture file: 1
+[10:53:02.598471][info]       - band 1: 8148 triangles.
+[10:53:02.609445][info]       - band 2: 21313 triangles.
+[10:53:02.657486][info]       - band 3: 29609 triangles.
+[10:53:02.770106][info] - camera 1548106287 (51/68) with contributions to 1 texture files:
+[10:53:03.255852][info]   exposure compensation for image 51: 1
+[10:53:04.174510][info]   - Texture file: 1
+[10:53:04.174510][info]       - band 1: 926 triangles.
+[10:53:04.188999][info]       - band 2: 15375 triangles.
+[10:53:04.227850][info]       - band 3: 137501 triangles.
+[10:53:04.363549][info] - camera 1554250495 (52/68) with contributions to 1 texture files:
+[10:53:04.835061][info]   exposure compensation for image 52: 1
+[10:53:05.777487][info]   - Texture file: 1
+[10:53:05.777487][info]       - band 1: 2430 triangles.
+[10:53:05.785386][info]       - band 2: 30628 triangles.
+[10:53:05.817917][info]       - band 3: 62020 triangles.
+[10:53:05.912699][info] - camera 1645935781 (53/68) with contributions to 1 texture files:
+[10:53:06.409122][info]   exposure compensation for image 53: 1
+[10:53:07.312850][info]   - Texture file: 1
+[10:53:07.312850][info]       - band 1: 1846 triangles.
+[10:53:07.325810][info]       - band 2: 28557 triangles.
+[10:53:07.368731][info]       - band 3: 63569 triangles.
+[10:53:07.456759][info] - camera 1663461638 (54/68) with contributions to 1 texture files:
+[10:53:07.931781][info]   exposure compensation for image 54: 1
+[10:53:08.859507][info]   - Texture file: 1
+[10:53:08.859507][info]       - band 1: 5663 triangles.
+[10:53:08.883496][info]       - band 2: 20163 triangles.
+[10:53:08.943953][info]       - band 3: 125800 triangles.
+[10:53:09.064450][info] - camera 1731876042 (55/68) with contributions to 1 texture files:
+[10:53:09.545080][info]   exposure compensation for image 55: 1
+[10:53:10.495788][info]   - Texture file: 1
+[10:53:10.495788][info]       - band 1: 17959 triangles.
+[10:53:10.529361][info]       - band 2: 142561 triangles.
+[10:53:10.666380][info]       - band 3: 83210 triangles.
+[10:53:10.807753][info] - camera 1751452114 (56/68) with contributions to 1 texture files:
+[10:53:11.286047][info]   exposure compensation for image 56: 1
+[10:53:12.220105][info]   - Texture file: 1
+[10:53:12.220105][info]       - band 1: 1708 triangles.
+[10:53:12.226994][info]       - band 2: 22824 triangles.
+[10:53:12.275876][info]       - band 3: 35233 triangles.
+[10:53:12.365723][info] - camera 1773045893 (57/68) with contributions to 1 texture files:
+[10:53:12.873441][info]   exposure compensation for image 57: 1
+[10:53:13.802876][info]   - Texture file: 1
+[10:53:13.802876][info]       - band 1: 12506 triangles.
+[10:53:13.826876][info]       - band 2: 17938 triangles.
+[10:53:13.879878][info]       - band 3: 36398 triangles.
+[10:53:13.952586][info] - camera 1779713567 (58/68) with contributions to 1 texture files:
+[10:53:14.420862][info]   exposure compensation for image 58: 1
+[10:53:15.332621][info]   - Texture file: 1
+[10:53:15.332621][info]       - band 1: 1159 triangles.
+[10:53:15.345608][info]       - band 2: 16120 triangles.
+[10:53:15.422119][info]       - band 3: 87789 triangles.
+[10:53:15.506632][info] - camera 1786799461 (59/68) with contributions to 1 texture files:
+[10:53:15.982096][info]   exposure compensation for image 59: 1
+[10:53:16.897466][info]   - Texture file: 1
+[10:53:16.898448][info]       - band 1: 1231 triangles.
+[10:53:16.903445][info]       - band 2: 61509 triangles.
+[10:53:16.976445][info]       - band 3: 158778 triangles.
+[10:53:17.109978][info] - camera 1897308769 (60/68) with contributions to 1 texture files:
+[10:53:17.599408][info]   exposure compensation for image 60: 1
+[10:53:18.566347][info]   - Texture file: 1
+[10:53:18.566347][info]       - band 1: 1092 triangles.
+[10:53:18.570350][info]       - band 2: 78451 triangles.
+[10:53:18.643865][info]       - band 3: 100639 triangles.
+[10:53:18.743381][info] - camera 1947857646 (61/68) with contributions to 1 texture files:
+[10:53:19.223812][info]   exposure compensation for image 61: 1
+[10:53:20.254182][info]   - Texture file: 1
+[10:53:20.255186][info]       - band 1: 1017 triangles.
+[10:53:20.268181][info]       - band 2: 15407 triangles.
+[10:53:20.318693][info]       - band 3: 127436 triangles.
+[10:53:20.476675][info] - camera 1962913389 (62/68) with contributions to 1 texture files:
+[10:53:21.043839][info]   exposure compensation for image 62: 1
+[10:53:22.023395][info]   - Texture file: 1
+[10:53:22.023395][info]       - band 1: 31543 triangles.
+[10:53:22.062394][info]       - band 2: 61425 triangles.
+[10:53:22.149913][info]       - band 3: 202214 triangles.
+[10:53:22.316943][info] - camera 2008408367 (63/68) with contributions to 1 texture files:
+[10:53:22.814830][info]   exposure compensation for image 63: 1
+[10:53:23.738657][info]   - Texture file: 1
+[10:53:23.738657][info]       - band 1: 1111 triangles.
+[10:53:23.745652][info]       - band 2: 14940 triangles.
+[10:53:23.784654][info]       - band 3: 73416 triangles.
+[10:53:23.902685][info] - camera 2041461345 (64/68) with contributions to 1 texture files:
+[10:53:24.376972][info]   exposure compensation for image 64: 1
+[10:53:25.309741][info]   - Texture file: 1
+[10:53:25.309741][info]       - band 1: 4139 triangles.
+[10:53:25.314738][info]       - band 2: 53502 triangles.
+[10:53:25.371809][info]       - band 3: 116098 triangles.
+[10:53:25.465729][info] - camera 2081932783 (65/68) with contributions to 1 texture files:
+[10:53:25.948540][info]   exposure compensation for image 65: 1
+[10:53:26.988152][info]   - Texture file: 1
+[10:53:26.988152][info]       - band 1: 5406 triangles.
+[10:53:27.003410][info]       - band 2: 205303 triangles.
+[10:53:27.183307][info]       - band 3: 32744 triangles.
+[10:53:27.273503][info] - camera 2082192290 (66/68) with contributions to 1 texture files:
+[10:53:27.804351][info]   exposure compensation for image 66: 1
+[10:53:28.792457][info]   - Texture file: 1
+[10:53:28.792457][info]       - band 1: 5058 triangles.
+[10:53:28.804954][info]       - band 2: 34381 triangles.
+[10:53:28.867954][info]       - band 3: 36053 triangles.
+[10:53:28.965465][info] - camera 2115711330 (67/68) with contributions to 1 texture files:
+[10:53:29.462861][info]   exposure compensation for image 67: 1
+[10:53:30.412492][info]   - Texture file: 1
+[10:53:30.412492][info]       - band 1: 8565 triangles.
+[10:53:30.428468][info]       - band 2: 15354 triangles.
+[10:53:30.453469][info]       - band 3: 50432 triangles.
+[10:53:30.529978][info] - camera 2122584939 (68/68) with contributions to 1 texture files:
+[10:53:31.007206][info]   exposure compensation for image 68: 1
+[10:53:31.958272][info]   - Texture file: 1
+[10:53:31.958272][info]       - band 1: 39670 triangles.
+[10:53:32.007936][info]       - band 2: 24186 triangles.
+[10:53:32.056233][info]       - band 3: 33599 triangles.
+[10:53:32.117743][info] Create texture 1
+[10:53:32.117743][info]   - Computing final (average) color.
+[10:53:32.717907][info]   - Edge padding (15 pixels).
+[10:53:32.987654][info]   - Downscaling texture (2x).
+[10:53:36.669761][info]   - Writing texture file: C:/Users/fisha/AppData/Local/Temp/MeshroomCache/Texturing/721f66642ef678c7e83fb02efc51eb1ca101aba3\texture_1001.exr
+[10:53:37.293980][info] Generating texture for atlases 2 to 2
+[10:53:37.293980][info] Generating texture for atlas 2/3 (659075 triangles).
+[10:53:45.932229][info] Reading pixel color.
+[10:53:46.933152][info] - camera 43266718 (1/68) with contributions to 1 texture files:
+[10:53:47.435957][info]   exposure compensation for image 1: 1
+[10:53:48.486075][info]   - Texture file: 2
+[10:53:48.486075][info]       - band 1: 4086 triangles.
+[10:53:48.496255][info]       - band 2: 70287 triangles.
+[10:53:48.607499][info]       - band 3: 89066 triangles.
+[10:53:48.712583][info] - camera 77145610 (2/68) with contributions to 1 texture files:
+[10:53:49.203104][info]   exposure compensation for image 2: 1
+[10:53:50.097189][info]   - Texture file: 2
+[10:53:50.097189][info]       - band 1: 45821 triangles.
+[10:53:50.156755][info]       - band 2: 49935 triangles.
+[10:53:50.212284][info]       - band 3: 46558 triangles.
+[10:53:50.280547][info] - camera 90598244 (3/68) with contributions to 1 texture files:
+[10:53:50.777340][info]   exposure compensation for image 3: 1
+[10:53:51.719579][info]   - Texture file: 2
+[10:53:51.719579][info]       - band 1: 1739 triangles.
+[10:53:51.723572][info]       - band 2: 40397 triangles.
+[10:53:51.767032][info]       - band 3: 73028 triangles.
+[10:53:51.850210][info] - camera 111908369 (4/68) with contributions to 1 texture files:
+[10:53:52.335313][info]   exposure compensation for image 4: 1
+[10:53:53.234471][info]   - Texture file: 2
+[10:53:53.234471][info]       - band 1: 15476 triangles.
+[10:53:53.260443][info]       - band 2: 77387 triangles.
+[10:53:53.354657][info]       - band 3: 56437 triangles.
+[10:53:53.428117][info] - camera 146927743 (5/68) with contributions to 1 texture files:
+[10:53:53.919234][info]   exposure compensation for image 5: 1
+[10:53:54.799283][info]   - Texture file: 2
+[10:53:54.800253][info]       - band 1: 12285 triangles.
+[10:53:54.818251][info]       - band 2: 50190 triangles.
+[10:53:54.870465][info]       - band 3: 71388 triangles.
+[10:53:54.953975][info] - camera 165704781 (6/68) with contributions to 1 texture files:
+[10:53:55.456728][info]   exposure compensation for image 6: 1
+[10:53:56.341745][info]   - Texture file: 2
+[10:53:56.341745][info]       - band 1: 2708 triangles.
+[10:53:56.352718][info]       - band 2: 67352 triangles.
+[10:53:56.425719][info]       - band 3: 88796 triangles.
+[10:53:56.523233][info] - camera 184377246 (7/68) with contributions to 1 texture files:
+[10:53:57.025128][info]   exposure compensation for image 7: 1
+[10:53:57.984357][info]   - Texture file: 2
+[10:53:57.984357][info]       - band 1: 2467 triangles.
+[10:53:57.993411][info]       - band 2: 27736 triangles.
+[10:53:58.042934][info]       - band 3: 116785 triangles.
+[10:53:58.151446][info] - camera 229347473 (8/68) with contributions to 1 texture files:
+[10:53:58.637839][info]   exposure compensation for image 8: 1
+[10:53:59.538974][info]   - Texture file: 2
+[10:53:59.538974][info]       - band 1: 2331 triangles.
+[10:53:59.546489][info]       - band 2: 26467 triangles.
+[10:53:59.581489][info]       - band 3: 141695 triangles.
+[10:53:59.721006][info] - camera 234982282 (9/68) with contributions to 1 texture files:
+[10:54:00.224682][info]   exposure compensation for image 9: 1
+[10:54:01.180771][info]   - Texture file: 2
+[10:54:01.181767][info]       - band 1: 334 triangles.
+[10:54:01.182767][info]       - band 2: 13941 triangles.
+[10:54:01.204766][info]       - band 3: 78732 triangles.
+[10:54:01.286313][info] - camera 246216395 (10/68) with contributions to 1 texture files:
+[10:54:01.770610][info]   exposure compensation for image 10: 1
+[10:54:02.720030][info]   - Texture file: 2
+[10:54:02.720030][info]       - band 1: 34254 triangles.
+[10:54:02.766553][info]       - band 2: 70237 triangles.
+[10:54:02.846066][info]       - band 3: 44727 triangles.
+[10:54:02.926066][info] - camera 277561536 (11/68) with contributions to 1 texture files:
+[10:54:03.416761][info]   exposure compensation for image 11: 1
+[10:54:04.342991][info]   - Texture file: 2
+[10:54:04.342991][info]       - band 1: 8605 triangles.
+[10:54:04.360996][info]       - band 2: 58298 triangles.
+[10:54:04.449509][info]       - band 3: 68053 triangles.
+[10:54:04.542573][info] - camera 368658088 (12/68) with contributions to 1 texture files:
+[10:54:05.033479][info]   exposure compensation for image 12: 1
+[10:54:05.983079][info]   - Texture file: 2
+[10:54:05.984085][info]       - band 1: 2740 triangles.
+[10:54:05.989972][info]       - band 2: 39558 triangles.
+[10:54:06.044446][info]       - band 3: 151090 triangles.
+[10:54:06.207391][info] - camera 381518137 (13/68) with contributions to 1 texture files:
+[10:54:06.706744][info]   exposure compensation for image 13: 1
+[10:54:07.626012][info]   - Texture file: 2
+[10:54:07.626012][info]       - band 1: 19465 triangles.
+[10:54:07.653383][info]       - band 2: 76694 triangles.
+[10:54:07.745902][info]       - band 3: 60807 triangles.
+[10:54:07.832302][info] - camera 405869438 (14/68) with contributions to 1 texture files:
+[10:54:08.304004][info]   exposure compensation for image 14: 1
+[10:54:09.256198][info]   - Texture file: 2
+[10:54:09.256198][info]       - band 1: 1809 triangles.
+[10:54:09.264192][info]       - band 2: 33261 triangles.
+[10:54:09.313460][info]       - band 3: 137988 triangles.
+[10:54:09.462759][info] - camera 495512850 (15/68) with contributions to 1 texture files:
+[10:54:09.959040][info]   exposure compensation for image 15: 1
+[10:54:10.897666][info]   - Texture file: 2
+[10:54:10.897666][info]       - band 1: 831 triangles.
+[10:54:10.899614][info]       - band 2: 19175 triangles.
+[10:54:10.923869][info]       - band 3: 80952 triangles.
+[10:54:11.002514][info] - camera 526388780 (16/68) with contributions to 1 texture files:
+[10:54:11.498053][info]   exposure compensation for image 16: 1
+[10:54:12.453802][info]   - Texture file: 2
+[10:54:12.453802][info]       - band 1: 1301 triangles.
+[10:54:12.457206][info]       - band 2: 14619 triangles.
+[10:54:12.476200][info]       - band 3: 93433 triangles.
+[10:54:12.566028][info] - camera 541543423 (17/68) with contributions to 1 texture files:
+[10:54:13.056579][info]   exposure compensation for image 17: 1
+[10:54:13.976165][info]   - Texture file: 2
+[10:54:13.976165][info]       - band 1: 6245 triangles.
+[10:54:13.987060][info]       - band 2: 82431 triangles.
+[10:54:14.073909][info]       - band 3: 81681 triangles.
+[10:54:14.182822][info] - camera 554787025 (18/68) with contributions to 1 texture files:
+[10:54:14.671425][info]   exposure compensation for image 18: 1
+[10:54:15.590986][info]   - Texture file: 2
+[10:54:15.590986][info]       - band 1: 29241 triangles.
+[10:54:15.624780][info]       - band 2: 45864 triangles.
+[10:54:15.680299][info]       - band 3: 49987 triangles.
+[10:54:15.752627][info] - camera 619287175 (19/68) with contributions to 1 texture files:
+[10:54:16.242891][info]   exposure compensation for image 19: 1
+[10:54:17.207289][info]   - Texture file: 2
+[10:54:17.207289][info]       - band 1: 8466 triangles.
+[10:54:17.218630][info]       - band 2: 22577 triangles.
+[10:54:17.248755][info]       - band 3: 79425 triangles.
+[10:54:17.339674][info] - camera 670737387 (20/68) with contributions to 1 texture files:
+[10:54:17.817925][info]   exposure compensation for image 20: 1
+[10:54:18.756182][info]   - Texture file: 2
+[10:54:18.757205][info]       - band 1: 1000 triangles.
+[10:54:18.764636][info]       - band 2: 34107 triangles.
+[10:54:18.821398][info]       - band 3: 101039 triangles.
+[10:54:18.939370][info] - camera 700266675 (21/68) with contributions to 1 texture files:
+[10:54:19.449029][info]   exposure compensation for image 21: 1
+[10:54:20.377280][info]   - Texture file: 2
+[10:54:20.378232][info]       - band 1: 20843 triangles.
+[10:54:20.404229][info]       - band 2: 58889 triangles.
+[10:54:20.462314][info]       - band 3: 57941 triangles.
+[10:54:20.536826][info] - camera 709021393 (22/68) with contributions to 1 texture files:
+[10:54:21.051809][info]   exposure compensation for image 22: 1
+[10:54:22.054202][info]   - Texture file: 2
+[10:54:22.054202][info]       - band 1: 26702 triangles.
+[10:54:22.087666][info]       - band 2: 62577 triangles.
+[10:54:22.164674][info]       - band 3: 87660 triangles.
+[10:54:22.256239][info] - camera 742289613 (23/68) with contributions to 1 texture files:
+[10:54:22.749135][info]   exposure compensation for image 23: 1
+[10:54:23.698065][info]   - Texture file: 2
+[10:54:23.698065][info]       - band 1: 1674 triangles.
+[10:54:23.702991][info]       - band 2: 34328 triangles.
+[10:54:23.761591][info]       - band 3: 157185 triangles.
+[10:54:23.916401][info] - camera 745582541 (24/68) with contributions to 1 texture files:
+[10:54:24.423116][info]   exposure compensation for image 24: 1
+[10:54:25.346469][info]   - Texture file: 2
+[10:54:25.346469][info]       - band 1: 6523 triangles.
+[10:54:25.357452][info]       - band 2: 33614 triangles.
+[10:54:25.406963][info]       - band 3: 164917 triangles.
+[10:54:25.561463][info] - camera 853398952 (25/68) with contributions to 1 texture files:
+[10:54:26.032226][info]   exposure compensation for image 25: 1
+[10:54:26.983666][info]   - Texture file: 2
+[10:54:26.983666][info]       - band 1: 415 triangles.
+[10:54:26.985666][info]       - band 2: 11564 triangles.
+[10:54:27.001666][info]       - band 3: 72098 triangles.
+[10:54:27.089925][info] - camera 854275876 (26/68) with contributions to 1 texture files:
+[10:54:27.592026][info]   exposure compensation for image 26: 1
+[10:54:28.540571][info]   - Texture file: 2
+[10:54:28.541610][info]       - band 1: 873 triangles.
+[10:54:28.543510][info]       - band 2: 31981 triangles.
+[10:54:28.593038][info]       - band 3: 163826 triangles.
+[10:54:28.759314][info] - camera 864914385 (27/68) with contributions to 1 texture files:
+[10:54:29.261880][info]   exposure compensation for image 27: 1
+[10:54:30.206445][info]   - Texture file: 2
+[10:54:30.206445][info]       - band 1: 8555 triangles.
+[10:54:30.226417][info]       - band 2: 75935 triangles.
+[10:54:30.323007][info]       - band 3: 90801 triangles.
+[10:54:30.432701][info] - camera 880736666 (28/68) with contributions to 1 texture files:
+[10:54:30.945687][info]   exposure compensation for image 28: 1
+[10:54:31.883062][info]   - Texture file: 2
+[10:54:31.883987][info]       - band 1: 11446 triangles.
+[10:54:31.901945][info]       - band 2: 72894 triangles.
+[10:54:31.972082][info]       - band 3: 76347 triangles.
+[10:54:32.063534][info] - camera 901486833 (29/68) with contributions to 1 texture files:
+[10:54:32.557113][info]   exposure compensation for image 29: 1
+[10:54:33.500811][info]   - Texture file: 2
+[10:54:33.500811][info]       - band 1: 15207 triangles.
+[10:54:33.524684][info]       - band 2: 62506 triangles.
+[10:54:33.596680][info]       - band 3: 102085 triangles.
+[10:54:33.698977][info] - camera 902568169 (30/68) with contributions to 1 texture files:
+[10:54:34.170783][info]   exposure compensation for image 30: 1
+[10:54:35.125382][info]   - Texture file: 2
+[10:54:35.126425][info]       - band 1: 3969 triangles.
+[10:54:35.134764][info]       - band 2: 46530 triangles.
+[10:54:35.190238][info]       - band 3: 105231 triangles.
+[10:54:35.324617][info] - camera 911558037 (31/68) with contributions to 1 texture files:
+[10:54:35.816203][info]   exposure compensation for image 31: 1
+[10:54:36.753233][info]   - Texture file: 2
+[10:54:36.753233][info]       - band 1: 1420 triangles.
+[10:54:36.759289][info]       - band 2: 43568 triangles.
+[10:54:36.807130][info]       - band 3: 133496 triangles.
+[10:54:36.935789][info] - camera 1041679217 (32/68) with contributions to 1 texture files:
+[10:54:37.420275][info]   exposure compensation for image 32: 1
+[10:54:38.360648][info]   - Texture file: 2
+[10:54:38.360648][info]       - band 1: 1135 triangles.
+[10:54:38.362629][info]       - band 2: 37818 triangles.
+[10:54:38.402137][info]       - band 3: 72044 triangles.
+[10:54:38.481152][info] - camera 1149281217 (33/68) with contributions to 1 texture files:
+[10:54:38.973347][info]   exposure compensation for image 33: 1
+[10:54:39.928140][info]   - Texture file: 2
+[10:54:39.928140][info]       - band 1: 2907 triangles.
+[10:54:39.936119][info]       - band 2: 61300 triangles.
+[10:54:40.005631][info]       - band 3: 106459 triangles.
+[10:54:40.135146][info] - camera 1191911393 (34/68) with contributions to 1 texture files:
+[10:54:40.609365][info]   exposure compensation for image 34: 1
+[10:54:41.545803][info]   - Texture file: 2
+[10:54:41.545803][info]       - band 1: 1526 triangles.
+[10:54:41.548800][info]       - band 2: 13118 triangles.
+[10:54:41.570802][info]       - band 3: 70172 triangles.
+[10:54:41.665316][info] - camera 1196941455 (35/68) with contributions to 1 texture files:
+[10:54:42.169330][info]   exposure compensation for image 35: 1
+[10:54:43.103751][info]   - Texture file: 2
+[10:54:43.103751][info]       - band 1: 9522 triangles.
+[10:54:43.123705][info]       - band 2: 50700 triangles.
+[10:54:43.191215][info]       - band 3: 87708 triangles.
+[10:54:43.298239][info] - camera 1228672150 (36/68) with contributions to 1 texture files:
+[10:54:43.783375][info]   exposure compensation for image 36: 1
+[10:54:44.719089][info]   - Texture file: 2
+[10:54:44.719089][info]       - band 1: 7285 triangles.
+[10:54:44.732071][info]       - band 2: 40427 triangles.
+[10:54:44.785342][info]       - band 3: 124158 triangles.
+[10:54:44.910088][info] - camera 1253472578 (37/68) with contributions to 1 texture files:
+[10:54:45.382044][info]   exposure compensation for image 37: 1
+[10:54:46.296212][info]   - Texture file: 2
+[10:54:46.296212][info]       - band 1: 5475 triangles.
+[10:54:46.310879][info]       - band 2: 80547 triangles.
+[10:54:46.421388][info]       - band 3: 62881 triangles.
+[10:54:46.533898][info] - camera 1255602396 (38/68) with contributions to 1 texture files:
+[10:54:47.021973][info]   exposure compensation for image 38: 1
+[10:54:47.956722][info]   - Texture file: 2
+[10:54:47.956722][info]       - band 1: 13037 triangles.
+[10:54:47.972697][info]       - band 2: 66634 triangles.
+[10:54:48.048220][info]       - band 3: 55349 triangles.
+[10:54:48.126873][info] - camera 1258086883 (39/68) with contributions to 1 texture files:
+[10:54:48.602380][info]   exposure compensation for image 39: 1
+[10:54:49.527899][info]   - Texture file: 2
+[10:54:49.528899][info]       - band 1: 3657 triangles.
+[10:54:49.537899][info]       - band 2: 59589 triangles.
+[10:54:49.607410][info]       - band 3: 90570 triangles.
+[10:54:49.724709][info] - camera 1270388477 (40/68) with contributions to 1 texture files:
+[10:54:50.224687][info]   exposure compensation for image 40: 1
+[10:54:51.183120][info]   - Texture file: 2
+[10:54:51.183120][info]       - band 1: 2846 triangles.
+[10:54:51.189115][info]       - band 2: 53927 triangles.
+[10:54:51.243632][info]       - band 3: 123430 triangles.
+[10:54:51.356497][info] - camera 1270546899 (41/68) with contributions to 1 texture files:
+[10:54:51.854426][info]   exposure compensation for image 41: 1
+[10:54:52.818297][info]   - Texture file: 2
+[10:54:52.819311][info]       - band 1: 9207 triangles.
+[10:54:52.839725][info]       - band 2: 56534 triangles.
+[10:54:52.918236][info]       - band 3: 125174 triangles.
+[10:54:53.045752][info] - camera 1288238893 (42/68) with contributions to 1 texture files:
+[10:54:53.520436][info]   exposure compensation for image 42: 1
+[10:54:54.440714][info]   - Texture file: 2
+[10:54:54.440714][info]       - band 1: 2383 triangles.
+[10:54:54.457711][info]       - band 2: 16520 triangles.
+[10:54:54.482712][info]       - band 3: 98788 triangles.
+[10:54:54.584233][info] - camera 1308686300 (43/68) with contributions to 1 texture files:
+[10:54:55.101023][info]   exposure compensation for image 43: 1
+[10:54:56.014305][info]   - Texture file: 2
+[10:54:56.014305][info]       - band 1: 5599 triangles.
+[10:54:56.030367][info]       - band 2: 59227 triangles.
+[10:54:56.092864][info]       - band 3: 96983 triangles.
+[10:54:56.179621][info] - camera 1406233784 (44/68) with contributions to 1 texture files:
+[10:54:56.650097][info]   exposure compensation for image 44: 1
+[10:54:57.665674][info]   - Texture file: 2
+[10:54:57.665674][info]       - band 1: 13556 triangles.
+[10:54:57.687071][info]       - band 2: 51478 triangles.
+[10:54:57.737252][info]       - band 3: 117801 triangles.
+[10:54:57.859323][info] - camera 1418813230 (45/68) with contributions to 1 texture files:
+[10:54:58.363991][info]   exposure compensation for image 45: 1
+[10:54:59.330075][info]   - Texture file: 2
+[10:54:59.330075][info]       - band 1: 10037 triangles.
+[10:54:59.346072][info]       - band 2: 75403 triangles.
+[10:54:59.428050][info]       - band 3: 87001 triangles.
+[10:54:59.528433][info] - camera 1444553575 (46/68) with contributions to 1 texture files:
+[10:55:00.103486][info]   exposure compensation for image 46: 1
+[10:55:01.072811][info]   - Texture file: 2
+[10:55:01.072811][info]       - band 1: 12205 triangles.
+[10:55:01.089804][info]       - band 2: 48121 triangles.
+[10:55:01.143321][info]       - band 3: 102046 triangles.
+[10:55:01.248661][info] - camera 1477005185 (47/68) with contributions to 1 texture files:
+[10:55:01.753589][info]   exposure compensation for image 47: 1
+[10:55:02.731972][info]   - Texture file: 2
+[10:55:02.731972][info]       - band 1: 2340 triangles.
+[10:55:02.737179][info]       - band 2: 60051 triangles.
+[10:55:02.807077][info]       - band 3: 113055 triangles.
+[10:55:02.912453][info] - camera 1494725122 (48/68) with contributions to 1 texture files:
+[10:55:03.461285][info]   exposure compensation for image 48: 1
+[10:55:04.427343][info]   - Texture file: 2
+[10:55:04.427343][info]       - band 1: 4170 triangles.
+[10:55:04.440485][info]       - band 2: 26714 triangles.
+[10:55:04.476484][info]       - band 3: 159038 triangles.
+[10:55:04.593219][info] - camera 1508495499 (49/68) with contributions to 1 texture files:
+[10:55:05.075477][info]   exposure compensation for image 49: 1
+[10:55:05.978030][info]   - Texture file: 2
+[10:55:05.978030][info]       - band 1: 16642 triangles.
+[10:55:06.008032][info]       - band 2: 42284 triangles.
+[10:55:06.062841][info]       - band 3: 78642 triangles.
+[10:55:06.148662][info] - camera 1521739940 (50/68) with contributions to 1 texture files:
+[10:55:06.643825][info]   exposure compensation for image 50: 1
+[10:55:07.566173][info]   - Texture file: 2
+[10:55:07.566173][info]       - band 1: 29021 triangles.
+[10:55:07.609645][info]       - band 2: 53823 triangles.
+[10:55:07.667863][info]       - band 3: 68643 triangles.
+[10:55:07.750386][info] - camera 1548106287 (51/68) with contributions to 1 texture files:
+[10:55:08.233362][info]   exposure compensation for image 51: 1
+[10:55:09.151692][info]   - Texture file: 2
+[10:55:09.152695][info]       - band 1: 1825 triangles.
+[10:55:09.156807][info]       - band 2: 34533 triangles.
+[10:55:09.195812][info]       - band 3: 133848 triangles.
+[10:55:09.311567][info] - camera 1554250495 (52/68) with contributions to 1 texture files:
+[10:55:09.785313][info]   exposure compensation for image 52: 1
+[10:55:10.730006][info]   - Texture file: 2
+[10:55:10.730006][info]       - band 1: 4298 triangles.
+[10:55:10.736992][info]       - band 2: 65765 triangles.
+[10:55:10.812799][info]       - band 3: 78310 triangles.
+[10:55:10.913631][info] - camera 1645935781 (53/68) with contributions to 1 texture files:
+[10:55:11.375168][info]   exposure compensation for image 53: 1
+[10:55:12.321861][info]   - Texture file: 2
+[10:55:12.321861][info]       - band 1: 2939 triangles.
+[10:55:12.328371][info]       - band 2: 33404 triangles.
+[10:55:12.392790][info]       - band 3: 80355 triangles.
+[10:55:12.490312][info] - camera 1663461638 (54/68) with contributions to 1 texture files:
+[10:55:12.956718][info]   exposure compensation for image 54: 1
+[10:55:13.851536][info]   - Texture file: 2
+[10:55:13.851536][info]       - band 1: 13064 triangles.
+[10:55:13.873134][info]       - band 2: 62350 triangles.
+[10:55:13.938785][info]       - band 3: 125262 triangles.
+[10:55:14.067748][info] - camera 1731876042 (55/68) with contributions to 1 texture files:
+[10:55:14.518050][info]   exposure compensation for image 55: 1
+[10:55:15.378069][info]   - Texture file: 2
+[10:55:15.379059][info]       - band 1: 21587 triangles.
+[10:55:15.405095][info]       - band 2: 70547 triangles.
+[10:55:15.480618][info]       - band 3: 63792 triangles.
+[10:55:15.562130][info] - camera 1751452114 (56/68) with contributions to 1 texture files:
+[10:55:16.022579][info]   exposure compensation for image 56: 1
+[10:55:16.906549][info]   - Texture file: 2
+[10:55:16.906549][info]       - band 1: 3273 triangles.
+[10:55:16.916531][info]       - band 2: 66504 triangles.
+[10:55:16.995120][info]       - band 3: 84913 triangles.
+[10:55:17.094223][info] - camera 1773045893 (57/68) with contributions to 1 texture files:
+[10:55:17.556636][info]   exposure compensation for image 57: 1
+[10:55:18.430528][info]   - Texture file: 2
+[10:55:18.430528][info]       - band 1: 39474 triangles.
+[10:55:18.489031][info]       - band 2: 46926 triangles.
+[10:55:18.538161][info]       - band 3: 75121 triangles.
+[10:55:18.628352][info] - camera 1779713567 (58/68) with contributions to 1 texture files:
+[10:55:19.079997][info]   exposure compensation for image 58: 1
+[10:55:19.963666][info]   - Texture file: 2
+[10:55:19.963666][info]       - band 1: 1918 triangles.
+[10:55:19.974664][info]       - band 2: 23811 triangles.
+[10:55:20.014837][info]       - band 3: 102364 triangles.
+[10:55:20.125778][info] - camera 1786799461 (59/68) with contributions to 1 texture files:
+[10:55:20.603480][info]   exposure compensation for image 59: 1
+[10:55:21.516608][info]   - Texture file: 2
+[10:55:21.516608][info]       - band 1: 2354 triangles.
+[10:55:21.524607][info]       - band 2: 48729 triangles.
+[10:55:21.589269][info]       - band 3: 105249 triangles.
+[10:55:21.702442][info] - camera 1897308769 (60/68) with contributions to 1 texture files:
+[10:55:22.181367][info]   exposure compensation for image 60: 1
+[10:55:23.068252][info]   - Texture file: 2
+[10:55:23.069254][info]       - band 1: 2307 triangles.
+[10:55:23.079248][info]       - band 2: 56742 triangles.
+[10:55:23.144933][info]       - band 3: 85192 triangles.
+[10:55:23.228093][info] - camera 1947857646 (61/68) with contributions to 1 texture files:
+[10:55:23.691459][info]   exposure compensation for image 61: 1
+[10:55:24.569762][info]   - Texture file: 2
+[10:55:24.569762][info]       - band 1: 1825 triangles.
+[10:55:24.575758][info]       - band 2: 43006 triangles.
+[10:55:24.622055][info]       - band 3: 127950 triangles.
+[10:55:24.753406][info] - camera 1962913389 (62/68) with contributions to 1 texture files:
+[10:55:25.223896][info]   exposure compensation for image 62: 1
+[10:55:26.107147][info]   - Texture file: 2
+[10:55:26.107147][info]       - band 1: 26922 triangles.
+[10:55:26.140028][info]       - band 2: 46174 triangles.
+[10:55:26.193538][info]       - band 3: 104721 triangles.
+[10:55:26.297282][info] - camera 2008408367 (63/68) with contributions to 1 texture files:
+[10:55:26.749611][info]   exposure compensation for image 63: 1
+[10:55:27.648885][info]   - Texture file: 2
+[10:55:27.648885][info]       - band 1: 1511 triangles.
+[10:55:27.651825][info]       - band 2: 36294 triangles.
+[10:55:27.692822][info]       - band 3: 122669 triangles.
+[10:55:27.823339][info] - camera 2041461345 (64/68) with contributions to 1 texture files:
+[10:55:28.290018][info]   exposure compensation for image 64: 1
+[10:55:29.164273][info]   - Texture file: 2
+[10:55:29.164273][info]       - band 1: 3298 triangles.
+[10:55:29.171136][info]       - band 2: 32989 triangles.
+[10:55:29.216767][info]       - band 3: 95050 triangles.
+[10:55:29.307120][info] - camera 2081932783 (65/68) with contributions to 1 texture files:
+[10:55:29.774534][info]   exposure compensation for image 65: 1
+[10:55:30.769626][info]   - Texture file: 2
+[10:55:30.769626][info]       - band 1: 3498 triangles.
+[10:55:30.776600][info]       - band 2: 90245 triangles.
+[10:55:30.864399][info]       - band 3: 51089 triangles.
+[10:55:30.944448][info] - camera 2082192290 (66/68) with contributions to 1 texture files:
+[10:55:31.437701][info]   exposure compensation for image 66: 1
+[10:55:32.339614][info]   - Texture file: 2
+[10:55:32.339614][info]       - band 1: 9551 triangles.
+[10:55:32.352980][info]       - band 2: 65675 triangles.
+[10:55:32.423794][info]       - band 3: 94809 triangles.
+[10:55:32.524311][info] - camera 2115711330 (67/68) with contributions to 1 texture files:
+[10:55:32.992244][info]   exposure compensation for image 67: 1
+[10:55:33.911390][info]   - Texture file: 2
+[10:55:33.912425][info]       - band 1: 32901 triangles.
+[10:55:33.953778][info]       - band 2: 23446 triangles.
+[10:55:33.982778][info]       - band 3: 70412 triangles.
+[10:55:34.070207][info] - camera 2122584939 (68/68) with contributions to 1 texture files:
+[10:55:34.517843][info]   exposure compensation for image 68: 1
+[10:55:35.410720][info]   - Texture file: 2
+[10:55:35.410720][info]       - band 1: 34841 triangles.
+[10:55:35.455184][info]       - band 2: 34545 triangles.
+[10:55:35.511185][info]       - band 3: 71865 triangles.
+[10:55:35.594705][info] Create texture 2
+[10:55:35.594705][info]   - Computing final (average) color.
+[10:55:36.139813][info]   - Edge padding (15 pixels).
+[10:55:36.418020][info]   - Downscaling texture (2x).
+[10:55:39.981594][info]   - Writing texture file: C:/Users/fisha/AppData/Local/Temp/MeshroomCache/Texturing/721f66642ef678c7e83fb02efc51eb1ca101aba3\texture_1002.exr
+[10:55:40.561994][info] Generating texture for atlases 3 to 3
+[10:55:40.561994][info] Generating texture for atlas 3/3 (703405 triangles).
+[10:55:49.671939][info] Reading pixel color.
+[10:55:50.605619][info] - camera 43266718 (1/68) with contributions to 1 texture files:
+[10:55:51.046885][info]   exposure compensation for image 1: 1
+[10:55:51.991326][info]   - Texture file: 3
+[10:55:51.992328][info]       - band 1: 5641 triangles.
+[10:55:52.005097][info]       - band 2: 87077 triangles.
+[10:55:52.116479][info]       - band 3: 100497 triangles.
+[10:55:52.231993][info] - camera 77145610 (2/68) with contributions to 1 texture files:
+[10:55:52.715251][info]   exposure compensation for image 2: 1
+[10:55:53.633625][info]   - Texture file: 3
+[10:55:53.633625][info]       - band 1: 27004 triangles.
+[10:55:53.674629][info]       - band 2: 33632 triangles.
+[10:55:53.718137][info]       - band 3: 48819 triangles.
+[10:55:53.789652][info] - camera 90598244 (3/68) with contributions to 1 texture files:
+[10:55:54.265473][info]   exposure compensation for image 3: 1
+[10:55:55.145702][info]   - Texture file: 3
+[10:55:55.145702][info]       - band 1: 3331 triangles.
+[10:55:55.152701][info]       - band 2: 51224 triangles.
+[10:55:55.209533][info]       - band 3: 81329 triangles.
+[10:55:55.308047][info] - camera 111908369 (4/68) with contributions to 1 texture files:
+[10:55:55.761659][info]   exposure compensation for image 4: 1
+[10:55:56.656238][info]   - Texture file: 3
+[10:55:56.656238][info]       - band 1: 13499 triangles.
+[10:55:56.679753][info]       - band 2: 82382 triangles.
+[10:55:56.774757][info]       - band 3: 74957 triangles.
+[10:55:56.857266][info] - camera 146927743 (5/68) with contributions to 1 texture files:
+[10:55:57.333856][info]   exposure compensation for image 5: 1
+[10:55:58.229256][info]   - Texture file: 3
+[10:55:58.229256][info]       - band 1: 14061 triangles.
+[10:55:58.252516][info]       - band 2: 55659 triangles.
+[10:55:58.314036][info]       - band 3: 61298 triangles.
+[10:55:58.395542][info] - camera 165704781 (6/68) with contributions to 1 texture files:
+[10:55:58.851636][info]   exposure compensation for image 6: 1
+[10:55:59.773774][info]   - Texture file: 3
+[10:55:59.773774][info]       - band 1: 3643 triangles.
+[10:55:59.782269][info]       - band 2: 53091 triangles.
+[10:55:59.845269][info]       - band 3: 94677 triangles.
+[10:55:59.959782][info] - camera 184377246 (7/68) with contributions to 1 texture files:
+[10:56:00.424339][info]   exposure compensation for image 7: 1
+[10:56:01.351260][info]   - Texture file: 3
+[10:56:01.352262][info]       - band 1: 4110 triangles.
+[10:56:01.361242][info]       - band 2: 35724 triangles.
+[10:56:01.404760][info]       - band 3: 84785 triangles.
+[10:56:01.499272][info] - camera 229347473 (8/68) with contributions to 1 texture files:
+[10:56:01.977606][info]   exposure compensation for image 8: 1
+[10:56:02.945700][info]   - Texture file: 3
+[10:56:02.945700][info]       - band 1: 2340 triangles.
+[10:56:02.951699][info]       - band 2: 33409 triangles.
+[10:56:02.992439][info]       - band 3: 157306 triangles.
+[10:56:03.149262][info] - camera 234982282 (9/68) with contributions to 1 texture files:
+[10:56:03.611377][info]   exposure compensation for image 9: 1
+[10:56:04.566673][info]   - Texture file: 3
+[10:56:04.566673][info]       - band 1: 659 triangles.
+[10:56:04.568688][info]       - band 2: 23309 triangles.
+[10:56:04.600194][info]       - band 3: 98979 triangles.
+[10:56:04.702706][info] - camera 246216395 (10/68) with contributions to 1 texture files:
+[10:56:05.168980][info]   exposure compensation for image 10: 1
+[10:56:06.077447][info]   - Texture file: 3
+[10:56:06.077447][info]       - band 1: 17459 triangles.
+[10:56:06.100940][info]       - band 2: 44745 triangles.
+[10:56:06.151146][info]       - band 3: 46802 triangles.
+[10:56:06.223663][info] - camera 277561536 (11/68) with contributions to 1 texture files:
+[10:56:06.695082][info]   exposure compensation for image 11: 1
+[10:56:07.635548][info]   - Texture file: 3
+[10:56:07.635548][info]       - band 1: 13840 triangles.
+[10:56:07.657809][info]       - band 2: 68218 triangles.
+[10:56:07.752830][info]       - band 3: 76828 triangles.
+[10:56:07.843699][info] - camera 368658088 (12/68) with contributions to 1 texture files:
+[10:56:08.304412][info]   exposure compensation for image 12: 1
+[10:56:09.231428][info]   - Texture file: 3
+[10:56:09.231428][info]       - band 1: 3945 triangles.
+[10:56:09.239513][info]       - band 2: 45262 triangles.
+[10:56:09.296378][info]       - band 3: 126595 triangles.
+[10:56:09.421139][info] - camera 381518137 (13/68) with contributions to 1 texture files:
+[10:56:09.887895][info]   exposure compensation for image 13: 1
+[10:56:10.800619][info]   - Texture file: 3
+[10:56:10.801624][info]       - band 1: 16266 triangles.
+[10:56:10.825603][info]       - band 2: 82820 triangles.
+[10:56:10.910640][info]       - band 3: 79420 triangles.
+[10:56:10.996259][info] - camera 405869438 (14/68) with contributions to 1 texture files:
+[10:56:11.457393][info]   exposure compensation for image 14: 1
+[10:56:12.387306][info]   - Texture file: 3
+[10:56:12.387306][info]       - band 1: 2510 triangles.
+[10:56:12.394797][info]       - band 2: 49799 triangles.
+[10:56:12.451114][info]       - band 3: 165310 triangles.
+[10:56:12.605076][info] - camera 495512850 (15/68) with contributions to 1 texture files:
+[10:56:13.082848][info]   exposure compensation for image 15: 1
+[10:56:13.986843][info]   - Texture file: 3
+[10:56:13.986843][info]       - band 1: 1682 triangles.
+[10:56:13.991350][info]       - band 2: 29475 triangles.
+[10:56:14.036605][info]       - band 3: 95328 triangles.
+[10:56:14.170117][info] - camera 526388780 (16/68) with contributions to 1 texture files:
+[10:56:14.642452][info]   exposure compensation for image 16: 1
+[10:56:15.550433][info]   - Texture file: 3
+[10:56:15.550433][info]       - band 1: 2938 triangles.
+[10:56:15.557433][info]       - band 2: 26258 triangles.
+[10:56:15.594948][info]       - band 3: 89805 triangles.
+[10:56:15.692457][info] - camera 541543423 (17/68) with contributions to 1 texture files:
+[10:56:16.168652][info]   exposure compensation for image 17: 1
+[10:56:17.087654][info]   - Texture file: 3
+[10:56:17.087654][info]       - band 1: 7276 triangles.
+[10:56:17.102165][info]       - band 2: 61087 triangles.
+[10:56:17.175165][info]       - band 3: 73946 triangles.
+[10:56:17.268682][info] - camera 554787025 (18/68) with contributions to 1 texture files:
+[10:56:17.735234][info]   exposure compensation for image 18: 1
+[10:56:18.665854][info]   - Texture file: 3
+[10:56:18.665854][info]       - band 1: 14804 triangles.
+[10:56:18.692866][info]       - band 2: 45526 triangles.
+[10:56:18.751488][info]       - band 3: 58570 triangles.
+[10:56:18.841001][info] - camera 619287175 (19/68) with contributions to 1 texture files:
+[10:56:19.326168][info]   exposure compensation for image 19: 1
+[10:56:20.238434][info]   - Texture file: 3
+[10:56:20.239437][info]       - band 1: 16558 triangles.
+[10:56:20.263937][info]       - band 2: 33778 triangles.
+[10:56:20.307446][info]       - band 3: 95813 triangles.
+[10:56:20.418762][info] - camera 670737387 (20/68) with contributions to 1 texture files:
+[10:56:20.878727][info]   exposure compensation for image 20: 1
+[10:56:21.761178][info]   - Texture file: 3
+[10:56:21.761178][info]       - band 1: 1706 triangles.
+[10:56:21.769173][info]       - band 2: 47286 triangles.
+[10:56:21.841693][info]       - band 3: 116514 triangles.
+[10:56:21.967572][info] - camera 700266675 (21/68) with contributions to 1 texture files:
+[10:56:22.450764][info]   exposure compensation for image 21: 1
+[10:56:23.355433][info]   - Texture file: 3
+[10:56:23.355433][info]       - band 1: 26048 triangles.
+[10:56:23.393433][info]       - band 2: 52542 triangles.
+[10:56:23.451207][info]       - band 3: 54809 triangles.
+[10:56:23.528428][info] - camera 709021393 (22/68) with contributions to 1 texture files:
+[10:56:23.990187][info]   exposure compensation for image 22: 1
+[10:56:24.949485][info]   - Texture file: 3
+[10:56:24.949485][info]       - band 1: 29286 triangles.
+[10:56:24.992970][info]       - band 2: 78289 triangles.
+[10:56:25.077974][info]       - band 3: 105600 triangles.
+[10:56:25.190184][info] - camera 742289613 (23/68) with contributions to 1 texture files:
+[10:56:25.660696][info]   exposure compensation for image 23: 1
+[10:56:26.565447][info]   - Texture file: 3
+[10:56:26.566424][info]       - band 1: 2314 triangles.
+[10:56:26.576423][info]       - band 2: 43164 triangles.
+[10:56:26.629043][info]       - band 3: 183482 triangles.
+[10:56:26.797782][info] - camera 745582541 (24/68) with contributions to 1 texture files:
+[10:56:27.275244][info]   exposure compensation for image 24: 1
+[10:56:28.307025][info]   - Texture file: 3
+[10:56:28.307025][info]       - band 1: 6065 triangles.
+[10:56:28.318007][info]       - band 2: 42528 triangles.
+[10:56:28.383271][info]       - band 3: 191731 triangles.
+[10:56:28.625095][info] - camera 853398952 (25/68) with contributions to 1 texture files:
+[10:56:29.301923][info]   exposure compensation for image 25: 1
+[10:56:30.400468][info]   - Texture file: 3
+[10:56:30.400468][info]       - band 1: 506 triangles.
+[10:56:30.402954][info]       - band 2: 19497 triangles.
+[10:56:30.435599][info]       - band 3: 93197 triangles.
+[10:56:30.554817][info] - camera 854275876 (26/68) with contributions to 1 texture files:
+[10:56:31.227438][info]   exposure compensation for image 26: 1
+[10:56:32.315643][info]   - Texture file: 3
+[10:56:32.316630][info]       - band 1: 1243 triangles.
+[10:56:32.319626][info]       - band 2: 38654 triangles.
+[10:56:32.381706][info]       - band 3: 189191 triangles.
+[10:56:32.593359][info] - camera 864914385 (27/68) with contributions to 1 texture files:
+[10:56:33.290574][info]   exposure compensation for image 27: 1
+[10:56:34.355464][info]   - Texture file: 3
+[10:56:34.355464][info]       - band 1: 15071 triangles.
+[10:56:34.381823][info]       - band 2: 98788 triangles.
+[10:56:34.526273][info]       - band 3: 99990 triangles.
+[10:56:34.683649][info] - camera 880736666 (28/68) with contributions to 1 texture files:
+[10:56:35.351461][info]   exposure compensation for image 28: 1
+[10:56:36.418853][info]   - Texture file: 3
+[10:56:36.418853][info]       - band 1: 13242 triangles.
+[10:56:36.441223][info]       - band 2: 53368 triangles.
+[10:56:36.510915][info]       - band 3: 65948 triangles.
+[10:56:36.616442][info] - camera 901486833 (29/68) with contributions to 1 texture files:
+[10:56:37.254445][info]   exposure compensation for image 29: 1
+[10:56:38.318971][info]   - Texture file: 3
+[10:56:38.318971][info]       - band 1: 16744 triangles.
+[10:56:38.346945][info]       - band 2: 67317 triangles.
+[10:56:38.431521][info]       - band 3: 111201 triangles.
+[10:56:38.591836][info] - camera 902568169 (30/68) with contributions to 1 texture files:
+[10:56:39.261590][info]   exposure compensation for image 30: 1
+[10:56:40.300183][info]   - Texture file: 3
+[10:56:40.300183][info]       - band 1: 4591 triangles.
+[10:56:40.312195][info]       - band 2: 48799 triangles.
+[10:56:40.379745][info]       - band 3: 120092 triangles.
+[10:56:40.554309][info] - camera 911558037 (31/68) with contributions to 1 texture files:
+[10:56:41.196970][info]   exposure compensation for image 31: 1
+[10:56:42.271739][info]   - Texture file: 3
+[10:56:42.271739][info]       - band 1: 2661 triangles.
+[10:56:42.279737][info]       - band 2: 48401 triangles.
+[10:56:42.345748][info]       - band 3: 131552 triangles.
+[10:56:42.507590][info] - camera 1041679217 (32/68) with contributions to 1 texture files:
+[10:56:43.170471][info]   exposure compensation for image 32: 1
+[10:56:44.244522][info]   - Texture file: 3
+[10:56:44.244522][info]       - band 1: 1738 triangles.
+[10:56:44.248514][info]       - band 2: 49545 triangles.
+[10:56:44.310722][info]       - band 3: 80238 triangles.
+[10:56:44.428525][info] - camera 1149281217 (33/68) with contributions to 1 texture files:
+[10:56:45.063958][info]   exposure compensation for image 33: 1
+[10:56:46.167739][info]   - Texture file: 3
+[10:56:46.167739][info]       - band 1: 4242 triangles.
+[10:56:46.175740][info]       - band 2: 50634 triangles.
+[10:56:46.252664][info]       - band 3: 87765 triangles.
+[10:56:46.382536][info] - camera 1191911393 (34/68) with contributions to 1 texture files:
+[10:56:47.050290][info]   exposure compensation for image 34: 1
+[10:56:48.203603][info]   - Texture file: 3
+[10:56:48.203603][info]       - band 1: 2025 triangles.
+[10:56:48.208585][info]       - band 2: 22852 triangles.
+[10:56:48.248100][info]       - band 3: 89417 triangles.
+[10:56:48.387007][info] - camera 1196941455 (35/68) with contributions to 1 texture files:
+[10:56:49.041401][info]   exposure compensation for image 35: 1
+[10:56:50.170487][info]   - Texture file: 3
+[10:56:50.170487][info]       - band 1: 15272 triangles.
+[10:56:50.198361][info]       - band 2: 60855 triangles.
+[10:56:50.286056][info]       - band 3: 107628 triangles.
+[10:56:50.453594][info] - camera 1228672150 (36/68) with contributions to 1 texture files:
+[10:56:51.115268][info]   exposure compensation for image 36: 1
+[10:56:52.478374][info]   - Texture file: 3
+[10:56:52.478374][info]       - band 1: 7647 triangles.
+[10:56:52.494624][info]       - band 2: 50685 triangles.
+[10:56:52.582683][info]       - band 3: 154114 triangles.
+[10:56:52.826465][info] - camera 1253472578 (37/68) with contributions to 1 texture files:
+[10:56:53.538605][info]   exposure compensation for image 37: 1
+[10:56:55.000599][info]   - Texture file: 3
+[10:56:55.001602][info]       - band 1: 6730 triangles.
+[10:56:55.021280][info]       - band 2: 81406 triangles.
+[10:56:55.174542][info]       - band 3: 80586 triangles.
+[10:56:55.331842][info] - camera 1255602396 (38/68) with contributions to 1 texture files:
+[10:56:55.968379][info]   exposure compensation for image 38: 1
+[10:56:57.270558][info]   - Texture file: 3
+[10:56:57.270558][info]       - band 1: 15419 triangles.
+[10:56:57.289565][info]       - band 2: 70438 triangles.
+[10:56:57.391393][info]       - band 3: 66432 triangles.
+[10:56:57.502097][info] - camera 1258086883 (39/68) with contributions to 1 texture files:
+[10:56:58.206323][info]   exposure compensation for image 39: 1
+[10:56:59.581349][info]   - Texture file: 3
+[10:56:59.581349][info]       - band 1: 3916 triangles.
+[10:56:59.591330][info]       - band 2: 59983 triangles.
+[10:56:59.676974][info]       - band 3: 109158 triangles.
+[10:56:59.817611][info] - camera 1270388477 (40/68) with contributions to 1 texture files:
+[10:57:00.552779][info]   exposure compensation for image 40: 1
+[10:57:01.921445][info]   - Texture file: 3
+[10:57:01.921445][info]       - band 1: 4077 triangles.
+[10:57:01.930451][info]       - band 2: 49135 triangles.
+[10:57:02.009351][info]       - band 3: 90388 triangles.
+[10:57:02.155507][info] - camera 1270546899 (41/68) with contributions to 1 texture files:
+[10:57:03.070708][info]   exposure compensation for image 41: 1
+[10:57:04.855810][info]   - Texture file: 3
+[10:57:04.855810][info]       - band 1: 12879 triangles.
+[10:57:04.876804][info]       - band 2: 47543 triangles.
+[10:57:04.942317][info]       - band 3: 103050 triangles.
+[10:57:05.052999][info] - camera 1288238893 (42/68) with contributions to 1 texture files:
+[10:57:05.648709][info]   exposure compensation for image 42: 1
+[10:57:06.956173][info]   - Texture file: 3
+[10:57:06.956173][info]       - band 1: 3019 triangles.
+[10:57:06.966154][info]       - band 2: 31771 triangles.
+[10:57:07.012589][info]       - band 3: 121480 triangles.
+[10:57:07.159189][info] - camera 1308686300 (43/68) with contributions to 1 texture files:
+[10:57:07.751039][info]   exposure compensation for image 43: 1
+[10:57:09.012842][info]   - Texture file: 3
+[10:57:09.012842][info]       - band 1: 8038 triangles.
+[10:57:09.029779][info]       - band 2: 42234 triangles.
+[10:57:09.091295][info]       - band 3: 84505 triangles.
+[10:57:09.191703][info] - camera 1406233784 (44/68) with contributions to 1 texture files:
+[10:57:09.862209][info]   exposure compensation for image 44: 1
+[10:57:11.438886][info]   - Texture file: 3
+[10:57:11.438886][info]       - band 1: 12857 triangles.
+[10:57:11.461620][info]       - band 2: 46021 triangles.
+[10:57:11.521619][info]       - band 3: 81663 triangles.
+[10:57:11.638333][info] - camera 1418813230 (45/68) with contributions to 1 texture files:
+[10:57:12.302356][info]   exposure compensation for image 45: 1
+[10:57:13.659908][info]   - Texture file: 3
+[10:57:13.659908][info]       - band 1: 14425 triangles.
+[10:57:13.679957][info]       - band 2: 92495 triangles.
+[10:57:13.776471][info]       - band 3: 97798 triangles.
+[10:57:13.886754][info] - camera 1444553575 (46/68) with contributions to 1 texture files:
+[10:57:14.510344][info]   exposure compensation for image 46: 1
+[10:57:15.790275][info]   - Texture file: 3
+[10:57:15.790275][info]       - band 1: 11956 triangles.
+[10:57:15.811982][info]       - band 2: 59653 triangles.
+[10:57:15.903315][info]       - band 3: 127314 triangles.
+[10:57:16.064122][info] - camera 1477005185 (47/68) with contributions to 1 texture files:
+[10:57:16.729581][info]   exposure compensation for image 47: 1
+[10:57:18.124712][info]   - Texture file: 3
+[10:57:18.124712][info]       - band 1: 3960 triangles.
+[10:57:18.132708][info]       - band 2: 49788 triangles.
+[10:57:18.185429][info]       - band 3: 81126 triangles.
+[10:57:18.287510][info] - camera 1494725122 (48/68) with contributions to 1 texture files:
+[10:57:18.916782][info]   exposure compensation for image 48: 1
+[10:57:20.454877][info]   - Texture file: 3
+[10:57:20.454877][info]       - band 1: 4325 triangles.
+[10:57:20.463024][info]       - band 2: 34231 triangles.
+[10:57:20.517691][info]       - band 3: 176244 triangles.
+[10:57:20.672365][info] - camera 1508495499 (49/68) with contributions to 1 texture files:
+[10:57:21.286048][info]   exposure compensation for image 49: 1
+[10:57:22.799486][info]   - Texture file: 3
+[10:57:22.799486][info]       - band 1: 23551 triangles.
+[10:57:22.836839][info]       - band 2: 51217 triangles.
+[10:57:22.893775][info]       - band 3: 67607 triangles.
+[10:57:22.989884][info] - camera 1521739940 (50/68) with contributions to 1 texture files:
+[10:57:23.629280][info]   exposure compensation for image 50: 1
+[10:57:25.092633][info]   - Texture file: 3
+[10:57:25.092633][info]       - band 1: 37372 triangles.
+[10:57:25.146547][info]       - band 2: 54739 triangles.
+[10:57:25.202806][info]       - band 3: 83369 triangles.
+[10:57:25.288054][info] - camera 1548106287 (51/68) with contributions to 1 texture files:
+[10:57:25.906208][info]   exposure compensation for image 51: 1
+[10:57:27.207138][info]   - Texture file: 3
+[10:57:27.207138][info]       - band 1: 2710 triangles.
+[10:57:27.212541][info]       - band 2: 37637 triangles.
+[10:57:27.253359][info]       - band 3: 120908 triangles.
+[10:57:27.378274][info] - camera 1554250495 (52/68) with contributions to 1 texture files:
+[10:57:27.988677][info]   exposure compensation for image 52: 1
+[10:57:29.072357][info]   - Texture file: 3
+[10:57:29.072357][info]       - band 1: 5222 triangles.
+[10:57:29.081339][info]       - band 2: 69971 triangles.
+[10:57:29.143039][info]       - band 3: 96638 triangles.
+[10:57:29.242161][info] - camera 1645935781 (53/68) with contributions to 1 texture files:
+[10:57:29.827139][info]   exposure compensation for image 53: 1
+[10:57:30.944597][info]   - Texture file: 3
+[10:57:30.944597][info]       - band 1: 4556 triangles.
+[10:57:30.955879][info]       - band 2: 49541 triangles.
+[10:57:31.031863][info]       - band 3: 98951 triangles.
+[10:57:31.177469][info] - camera 1663461638 (54/68) with contributions to 1 texture files:
+[10:57:31.779847][info]   exposure compensation for image 54: 1
+[10:57:33.013233][info]   - Texture file: 3
+[10:57:33.013233][info]       - band 1: 11680 triangles.
+[10:57:33.031231][info]       - band 2: 68462 triangles.
+[10:57:33.109415][info]       - band 3: 123751 triangles.
+[10:57:33.227407][info] - camera 1731876042 (55/68) with contributions to 1 texture files:
+[10:57:33.817247][info]   exposure compensation for image 55: 1
+[10:57:34.975316][info]   - Texture file: 3
+[10:57:34.975316][info]       - band 1: 14174 triangles.
+[10:57:34.994508][info]       - band 2: 48646 triangles.
+[10:57:35.059444][info]       - band 3: 58280 triangles.
+[10:57:35.145289][info] - camera 1751452114 (56/68) with contributions to 1 texture files:
+[10:57:35.727583][info]   exposure compensation for image 56: 1
+[10:57:36.954760][info]   - Texture file: 3
+[10:57:36.954760][info]       - band 1: 5233 triangles.
+[10:57:36.963771][info]       - band 2: 85728 triangles.
+[10:57:37.061371][info]       - band 3: 97609 triangles.
+[10:57:37.161999][info] - camera 1773045893 (57/68) with contributions to 1 texture files:
+[10:57:37.723908][info]   exposure compensation for image 57: 1
+[10:57:38.876862][info]   - Texture file: 3
+[10:57:38.876862][info]       - band 1: 37926 triangles.
+[10:57:38.929514][info]       - band 2: 58138 triangles.
+[10:57:38.992804][info]       - band 3: 92188 triangles.
+[10:57:39.130879][info] - camera 1779713567 (58/68) with contributions to 1 texture files:
+[10:57:39.773868][info]   exposure compensation for image 58: 1
+[10:57:41.102043][info]   - Texture file: 3
+[10:57:41.102043][info]       - band 1: 3007 triangles.
+[10:57:41.108888][info]       - band 2: 40663 triangles.
+[10:57:41.164040][info]       - band 3: 121864 triangles.
+[10:57:41.285943][info] - camera 1786799461 (59/68) with contributions to 1 texture files:
+[10:57:41.854348][info]   exposure compensation for image 59: 1
+[10:57:43.016822][info]   - Texture file: 3
+[10:57:43.016822][info]       - band 1: 4173 triangles.
+[10:57:43.025807][info]       - band 2: 44090 triangles.
+[10:57:43.084810][info]       - band 3: 98060 triangles.
+[10:57:43.202993][info] - camera 1897308769 (60/68) with contributions to 1 texture files:
+[10:57:43.834556][info]   exposure compensation for image 60: 1
+[10:57:44.996841][info]   - Texture file: 3
+[10:57:44.996841][info]       - band 1: 2820 triangles.
+[10:57:45.002822][info]       - band 2: 49867 triangles.
+[10:57:45.067428][info]       - band 3: 87981 triangles.
+[10:57:45.163946][info] - camera 1947857646 (61/68) with contributions to 1 texture files:
+[10:57:45.715302][info]   exposure compensation for image 61: 1
+[10:57:46.888478][info]   - Texture file: 3
+[10:57:46.888478][info]       - band 1: 2256 triangles.
+[10:57:46.892987][info]       - band 2: 44009 triangles.
+[10:57:46.939987][info]       - band 3: 127787 triangles.
+[10:57:47.087497][info] - camera 1962913389 (62/68) with contributions to 1 texture files:
+[10:57:47.663845][info]   exposure compensation for image 62: 1
+[10:57:48.851798][info]   - Texture file: 3
+[10:57:48.851798][info]       - band 1: 17405 triangles.
+[10:57:48.879136][info]       - band 2: 38511 triangles.
+[10:57:48.924651][info]       - band 3: 90652 triangles.
+[10:57:49.042941][info] - camera 2008408367 (63/68) with contributions to 1 texture files:
+[10:57:49.620993][info]   exposure compensation for image 63: 1
+[10:57:50.725860][info]   - Texture file: 3
+[10:57:50.726949][info]       - band 1: 2509 triangles.
+[10:57:50.732152][info]       - band 2: 39536 triangles.
+[10:57:50.776151][info]       - band 3: 135659 triangles.
+[10:57:50.896392][info] - camera 2041461345 (64/68) with contributions to 1 texture files:
+[10:57:51.470357][info]   exposure compensation for image 64: 1
+[10:57:52.580657][info]   - Texture file: 3
+[10:57:52.581592][info]       - band 1: 5650 triangles.
+[10:57:52.591598][info]       - band 2: 44158 triangles.
+[10:57:52.640772][info]       - band 3: 84607 triangles.
+[10:57:52.732386][info] - camera 2081932783 (65/68) with contributions to 1 texture files:
+[10:57:53.314064][info]   exposure compensation for image 65: 1
+[10:57:54.646612][info]   - Texture file: 3
+[10:57:54.646612][info]       - band 1: 5300 triangles.
+[10:57:54.654585][info]       - band 2: 52033 triangles.
+[10:57:54.704378][info]       - band 3: 49723 triangles.
+[10:57:54.768234][info] - camera 2082192290 (66/68) with contributions to 1 texture files:
+[10:57:55.351728][info]   exposure compensation for image 66: 1
+[10:57:56.488022][info]   - Texture file: 3
+[10:57:56.488938][info]       - band 1: 13566 triangles.
+[10:57:56.507401][info]       - band 2: 76759 triangles.
+[10:57:56.574402][info]       - band 3: 115740 triangles.
+[10:57:56.684922][info] - camera 2115711330 (67/68) with contributions to 1 texture files:
+[10:57:57.256458][info]   exposure compensation for image 67: 1
+[10:57:58.352276][info]   - Texture file: 3
+[10:57:58.353292][info]       - band 1: 36301 triangles.
+[10:57:58.395529][info]       - band 2: 35905 triangles.
+[10:57:58.438595][info]       - band 3: 85502 triangles.
+[10:57:58.536625][info] - camera 2122584939 (68/68) with contributions to 1 texture files:
+[10:57:59.132188][info]   exposure compensation for image 68: 1
+[10:58:00.292236][info]   - Texture file: 3
+[10:58:00.292236][info]       - band 1: 43864 triangles.
+[10:58:00.340747][info]       - band 2: 40228 triangles.
+[10:58:00.395159][info]       - band 3: 81697 triangles.
+[10:58:00.486891][info] Create texture 3
+[10:58:00.486891][info]   - Computing final (average) color.
+[10:58:01.216089][info]   - Edge padding (15 pixels).
+[10:58:01.658730][info]   - Downscaling texture (2x).
+[10:58:06.047308][info]   - Writing texture file: C:/Users/fisha/AppData/Local/Temp/MeshroomCache/Texturing/721f66642ef678c7e83fb02efc51eb1ca101aba3\texture_1003.exr
+[10:58:06.966951][info] Save C:/Users/fisha/AppData/Local/Temp/MeshroomCache/Texturing/721f66642ef678c7e83fb02efc51eb1ca101aba3\texturedMesh.obj mesh file
+[10:58:20.209443][info] Save mesh to obj done.
+[10:58:20.262147][info] Task done in (s): 426.896000
