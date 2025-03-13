@@ -1,0 +1,27 @@
+{
+    "SMPTE_Start_Frame": [
+        {
+            "Frames": 0,
+            "Hours": 0,
+            "Minutes": 0,
+            "Seconds": 0
+        }
+    ],
+    "VideoCameras": [
+        {
+            "Blackmagic_DeckLink_101": {
+                "StartOffset": 0
+            }
+        },
+        {
+            "Blackmagic_DeckLink_102": {
+                "StartOffset": 0
+            }
+        },
+        {
+            "Blackmagic_DeckLink_104": {
+                "StartOffset": 0
+            }
+        }
+    ]
+}
