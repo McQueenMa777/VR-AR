@@ -1,3 +1,3 @@
 # VR-AR
-- [x]Dissolve Material
-- [x]Statue Exports
+- [x] Dissolve Material
+- [x] Statue Exports
