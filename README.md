@@ -6,7 +6,9 @@
 - [x] Dissolve Material
 - [x] Dissolve animation
 - [x] Shadow Material
+- [ ] Shadow Animation timings
 - [ ] 2D Start Screen
-- [ ] Niagara water for boat
+- [x] Niagara water for boat
+- [ ] Test with Boat
 - [x] TV
-- [ ] Textures for landscape
+- [x] HDRI and Lighting
