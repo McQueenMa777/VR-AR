@@ -8,9 +8,7 @@
 - [x] Shadow Material
 - [ ] 2D Start Screen UI
 - [ ] Window Logic
-- [ ] 
 - [x] Niagara water for boat
 - [x] Boat Animation
-- [ ] 
 - [x] TV
 - [x] HDRI and Lighting
